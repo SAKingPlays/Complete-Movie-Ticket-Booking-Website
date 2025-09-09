@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CineMax - Premium Movie Ticket Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">CineMax</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#theaters">Theaters</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#signin" class="btn btn-outline signin-link">Sign In</a>
+                    <a href="#signup" class="btn btn-primary signup-link">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Experience Cinema Like Never Before</h1>
+            <p>Book your tickets for the latest blockbusters in premium theaters with state-of-the-art technology</p>
+            <a href="#movies" class="btn btn-primary">Browse Movies</a>
+        </div>
+        <div id="particles"></div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="movies-section">
+        <div class="container">
+            <h2 class="section-title">All Movies</h2>
+            <p class="section-description">Discover the latest blockbusters and upcoming releases in our premium theaters. Book tickets for an unforgettable cinematic experience.</p>
+            <div class="movies-grid">
+                <!-- Movie 1: Mission: Impossible Dead Reckoning -->
+                <div class="movie-card animate">
+                    <img src="images/missionimpossiblefinal1.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Mission: Impossible Dead Reckoning Part 1</h3>
+                        <div class="movie-meta">
+                            <span>2h 43m • Release: July 12, 2023</span>
+                            <span class="movie-rating">★ 7.7/10</span>
+                        </div>
+                        <p>The seventh film in the Mission: Impossible series, directed by Christopher McQuarrie, starring Tom Cruise as Ethan Hunt. The IMF team battles a rogue AI, "the Entity," in a global chase filled with intense stunts and espionage.</p>
+                        <p><strong>Director:</strong> Christopher McQuarrie</p>
+                        <p><strong>Stars:</strong> Tom Cruise (Ethan Hunt), Hayley Atwell (Grace), Ving Rhames (Luther Stickell), Simon Pegg (Benji Dunn), Rebecca Ferguson (Ilsa Faust), Esai Morales (Gabriel)</p>
+                        <p><strong>Genres:</strong> Action, Adventure, Thriller</p>
+                        <button class="btn btn-primary book-btn" data-movie="Mission: Impossible Dead Reckoning Part 1">Book Now</button>
+                    </div>
+                </div>
+                <!-- Movie 2: Mission: Impossible The Final Reckoning -->
+                <div class="movie-card animate">
+                    <img src="images/missionimpossiblefinal2.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Mission: Impossible The Final Reckoning</h3>
+                        <div class="movie-meta">
+                            <span>2h 36m • Release: May 23, 2025</span>
+                            <span class="movie-rating">★ 7.4/10</span>
+                        </div>
+                        <p>The eighth and possibly final Mission: Impossible film, directed by Christopher McQuarrie, continuing Ethan Hunts fight against the AI "the Entity" with high-stakes action and betrayals.</p>
+                        <p><strong>Director:</strong> Christopher McQuarrie</p>
+                        <p><strong>Stars:</strong> Tom Cruise (Ethan Hunt), Hayley Atwell (Grace), Ving Rhames (Luther Stickell), Simon Pegg (Benji Dunn), Esai Morales (Gabriel)</p>
+                        <p><strong>Genres:</strong> Action, Adventure, Thriller</p>
+                        <button class="btn btn-primary book-btn" data-movie="Mission: Impossible The Final Reckoning">Book Now</button>
+                    </div>
+                </div>
+                <!-- Movie 3: Demon Slayer Infinity Castle -->
+                <div class="movie-card animate">
+                    <img src="images/demonslayerinfinitycastle.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Demon Slayer Infinity Castle Part 1 (Akaza Returns)</h3>
+                        <div class="movie-meta">
+                            <span>1h 45m • Release: August 14, 2025</span>
+                            <span class="movie-rating">★ 8.5/10</span>
+                        </div>
+                        <p>A trilogy adapting the climactic "Infinity Castle Arc" from Demon Slayer: Kimetsu no Yaiba, focusing on the Demon Slayer Corps final battle against Muzan and his Upper Rank demons.</p>
+                        <p><strong>Director:</strong> Haruo Sotozaki (chief director), Hikaru Kondô (co-director)</p>
+                        <p><strong>Stars:</strong> (Voice Cast - English Dub): Zach Aguilar (Tanjiro Kamado), Akari Kitō (Nezuko Kamado), Johnny Yong Bosch (Giyu Tomioka), Griffin Burns (Zenitsu Agatsuma); (Japanese): Natsuki Hanae (Tanjiro), Yoshitsugu Matsuoka (Inosuke Hashibira)</p>
+                        <p><strong>Genres:</strong> Action, Adventure, Fantasy</p>
+                        <button class="btn btn-primary book-btn" data-movie="Demon Slayer Infinity Castle Part 1">Book Now</button>
+                    </div>
+                </div>
+                <!-- Movie 4: The Pope Exorcist -->
+                <div class="movie-card animate">
+                    <img src="images/thepopeexorcist.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Pope Exorcist</h3>
+                        <div class="movie-meta">
+                            <span>1h 43m • Release: April 14, 2023</span>
+                            <span class="movie-rating">★ 6.1/10</span>
+                        </div>
+                        <p>A supernatural horror film starring Russell Crowe as Father Gabriele Amorth, investigating a demonic possession in 1987 Spain that reveals a Vatican conspiracy.</p>
+                        <p><strong>Director:</strong> Julius Avery</p>
+                        <p><strong>Stars:</strong> Russell Crowe (Father Gabriel Amorth), Daniel Zovatto (Father Esquibel), Alexandra Essoe (Julia), Franco Nero (The Pope)</p>
+                        <p><strong>Genres:</strong> Horror, Thriller</p>
+                        <button class="btn btn-primary book-btn" data-movie="The Pope Exorcist">Book Now</button>
+                    </div>
+                </div>
+                <!-- Movie 5: Transformers Age of Extinction -->
+                <div class="movie-card animate">
+                    <img src="images/transformersageofextinction.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Transformers Age of Extinction</h3>
+                        <div class="movie-meta">
+                            <span>2h 45m • Release: June 27, 2014</span>
+                            <span class="movie-rating">★ 5.6/10</span>
+                        </div>
+                        <p>The fourth Transformers film, directed by Michael Bay, starring Mark Wahlberg. It follows Cade Yeager and the Autobots against human hunters and a rogue Transformer, Lockdown.</p>
+                        <p><strong>Director:</strong> Michael Bay</p>
+                        <p><strong>Stars:</strong> Mark Wahlberg (Cade Yeager), Stanley Tucci (Joshua Joyce), Kelsey Grammer (Harold Attinger), Peter Cullen (voice of Optimus Prime), Nicola Peltz (Tessa Yeager)</p>
+                        <p><strong>Genres:</strong> Action, Comedy, Crime</p>
+                        <button class="btn btn-primary book-btn" data-movie="Transformers Age of Extinction">Book Now</button>
+                    </div>
+                </div>
+                <!-- Movie 6: The Gorge -->
+                <div class="movie-card animate">
+                    <img src="images/thegorge.jpeg" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Gorge</h3>
+                        <div class="movie-meta">
+                            <span>1h 47m • Release: February 14, 2025</span>
+                            <span class="movie-rating">★ 6.3/10</span>
+                        </div>
+                        <p>A sci-fi action thriller on Apple TV+, starring Miles Teller and Anya Taylor-Joy as snipers guarding a mysterious gorge, uncovering secrets and forming a bond.</p>
+                        <p><strong>Director:</strong> Scott Derrickson</p>
+                        <p><strong>Stars:</strong> Miles Teller (Levi), Anya Taylor-Joy (Drasa), Sigourney Weaver (Dr. Harper)</p>
+                        <p><strong>Genres:</strong> Action, Adventure, Horror, Romance, Sci-Fi</p>
+                        <button class="btn btn-primary book-btn" data-movie="The Gorge">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theaters Section -->
+    <section id="theaters" class="movies-section">
+        <div class="container">
+            <h2 class="section-title">Our Premium Theaters</h2>
+            <p class="section-description">Explore our state-of-the-art theaters equipped with Dolby Atmos, IMAX screens, recliner seating, and gourmet concessions for the ultimate movie experience.</p>
+            <div class="movies-grid">
+                <!-- Theater 1 -->
+                <div class="movie-card animate">
+                    <img src="images/regalcinema.png" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Regal Cinema</h3>
+                        <div class="movie-meta">
+                            <span>Location: Nawabshah, PK</span>
+                            <span class="movie-rating">★ 4.9/5</span>
+                        </div>
+                        <p>Our flagship theater in the heart of the city, featuring 12 screens, VIP lounges, and laser projection for crystal-clear visuals.</p>
+                        <button class="btn btn-primary view-btn" data-theater="Regal Cinema">View Showtimes</button>
+                    </div>
+                </div>
+                <!-- Theater 2 -->
+                <div class="movie-card animate">
+                    <img src="images/nishatcinema.png" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Nishat Cinema</h3>
+                        <div class="movie-meta">
+                            <span>Location: Nawabshah, PK</span>
+                            <span class="movie-rating">★ 4.8/5</span>
+                        </div>
+                        <p>A coastal gem with outdoor screening options, premium sound systems, and beach-themed concessions for a relaxed vibe.</p>
+                        <button class="btn btn-primary view-btn" data-theater="Nishat Cinema">View Showtimes</button>
+                    </div>
+                </div>
+                <!-- Theater 3 -->
+                <div class="movie-card animate">
+                    <img src="images/nueplexcinema.png" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Nueplex Cinemas</h3>
+                        <div class="movie-meta">
+                            <span>Location: Karachi, PK</span>
+                            <span class="movie-rating">★ 4.7/5</span>
+                        </div>
+                        <p>Urban luxury with heated recliners, 4DX motion seats, and a full bar for an immersive city escape.</p>
+                        <button class="btn btn-primary view-btn" data-theater="Nueplex Cinemas">View Showtimes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="movies-section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">Have questions or feedback? Our team is here to help. Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="booking">Booking Inquiry</option>
+                            <option value="offers">Offers & Promotions</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="8" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close close-signup">&times;</span>
+            <h2 class="section-title">Sign Up for CineMax</h2>
+            <p class="section-description">Create an account to book tickets, get exclusive offers, and personalized recommendations.</p>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Enter a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p class="form-link">Already have an account? <a href="#" class="switch-to-signin">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close close-signin">&times;</span>
+            <h2 class="section-title">Sign In to CineMax</h2>
+            <p class="section-description">Access your bookings, offers, and personalized recommendations.</p>
+            <form id="signinForm">
+                <div class="form-group">
+                    <label for="signin-email">Email</label>
+                    <input type="email" id="signin-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password</label>
+                    <input type="password" id="signin-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+                <p class="form-link">Don't have an account? <a href="#" class="switch-to-signup">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About CineMax</h3>
+                    <p>Premium movie experience with state-of-the-art technology, comfortable seating, and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#theaters">Theaters</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 CineMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/02e950a432.js" crossorigin="anonymous"></script>
+</body>
+</html>
